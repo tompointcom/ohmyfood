@@ -1,5 +1,11 @@
 .main {
     &__location {
         @include flex-center;
+        padding: 15px;
+        box-shadow: inset 0px 2px 4px 0px #00000026, 0px 4px 4px 0px #00000040;
+        gap: 17px;
+        background: #EAEAEA;
+        color: #353535;
+        font-weight: 500;
     }
 }
