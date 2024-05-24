@@ -1,0 +1,18 @@
+.main__restaurants__link__card__content__icon {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 20;
+    cursor: pointer;
+  
+    svg {
+      overflow: visible;
+      width: 25px;
+    }
+  
+    path {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 1550;
+      transform-origin: center;
+    }
+  
+}

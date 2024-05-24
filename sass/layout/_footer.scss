@@ -1,0 +1,21 @@
+.footer {
+    background: #353535;
+    color: white;
+
+    &__title {
+        font-family: $title-font;
+        font-weight: 400;
+        font-style: italic;
+        font-style: 18px;
+        
+    }
+
+    &__content {
+        
+        &__unordered-list {   
+        @include image-list-puces($image-puce1, $image-puce2);
+
+        }
+    }
+
+}

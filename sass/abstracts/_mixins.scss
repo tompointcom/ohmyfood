@@ -4,3 +4,32 @@
     align-items: center;
 }
 
+@mixin purple-button {
+    padding: 15px 20px 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+@mixin btn-shadow {
+    box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+@mixin steps-shadow {
+    box-shadow: 0px 4px 15px 0px #00000026;
+}
+
+@mixin image-list-puces($image-puce1, $image-puce2) {
+    list-style-image: none;
+  
+    li:nth-child(odd) {
+      list-style-image: $image-puce1;
+    }
+  
+    li:nth-child(even) {
+      list-style-image: $image-puce2;
+    }
+  }
