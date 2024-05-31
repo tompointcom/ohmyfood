@@ -11,7 +11,5 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $section-color: #F6F6F6;
 $card-bg-color: #FFFFFF;
-
-
-$image-puce1: url("../../assets/Icons/fork-knife.svg");
-$image-puce2: url("../../assets/Icons/mains.svg");
+$gradient : linear-gradient(to bottom, $primary-color -11.44%, $secondary-color 123.93%);
+$light-gradiant: linear-gradient(to bottom, lighten($primary-color, 5) -11.44%, lighten($secondary-color, 5) 123.93%);

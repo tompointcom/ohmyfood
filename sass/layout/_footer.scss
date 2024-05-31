@@ -1,6 +1,17 @@
 .footer {
     background: #353535;
     color: white;
+    padding: 2ch;
+
+    @media (min-width: 1254px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 60px;
+        padding-right: 50px;
+        
+    }
 
     &__title {
         font-family: $title-font;
@@ -13,7 +24,31 @@
     &__content {
         
         &__unordered-list {   
-        @include image-list-puces($image-puce1, $image-puce2);
+
+            @media (min-width: 1254px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                
+                gap: 30px;
+            }
+        
+
+        a:visited {
+            color: white;
+        }
+
+        .list-icon1::before {
+            content: "\f2e7";
+            font-family: "FontAwesome";
+            margin-right: 1em;
+        }
+
+        .list-icon2::before {
+            content: "\f4c4";
+            font-family: "FontAwesome";
+            margin-right: 0.5em;
+        }
 
         }
     }

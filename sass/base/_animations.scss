@@ -1,18 +1,8 @@
-.main__restaurants__link__card__content__icon {
-    fill: transparent;
-    stroke: black;
-    stroke-width: 20;
-    cursor: pointer;
-  
-    svg {
-      overflow: visible;
-      width: 25px;
+.main__description__btn:hover {
+  // transition: all 300ms ease-in-out;
+  background: $light-gradiant;
+    p {
+      transform: scale(1.02);
     }
-  
-    path {
-      stroke-dashoffset: 0;
-      stroke-dasharray: 1550;
-      transform-origin: center;
-    }
-  
+
 }
