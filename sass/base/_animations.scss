@@ -6,3 +6,26 @@
     }
 
 }
+
+.heart-empty {
+  @include heart-empty;
+  
+
+}
+
+.heart-full {
+  @include heart-full; 
+}
+
+
+.heart:hover {
+
+    .heart-empty{
+      opacity: 0;
+    }
+
+    .heart-full{
+      opacity: 1;
+    }
+
+} 

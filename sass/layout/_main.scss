@@ -197,32 +197,24 @@
                                 
                                 
                                 .fa-heart {
-                                    align-self: flex-end;
-                                    z-index: 2;
-                                    position: absolute;
+                                    @include heart-empty;
                                     left: 95%;
-                                    transition: all 300ms ease-in-out;
-                                    font-size: 25px;
                                     
     
                                 }
     
                                 .fa-solid {
-                                    position: absolute;
-                                    opacity: 0;
-                                    background-clip: text;
-                                    background: $gradient;
-                                    -webkit-background-clip: text;
-                                    -webkit-text-fill-color: transparent; 
+                                    @include heart-full; 
                                 }
+
+                                
                                 .fa-regular:hover {
-                                    display: none;
                                     opacity: 0;
-                                }
+                                                                    }
     
                                 .fa-solid:hover {
                                     opacity: 1;
-    
+                                       
                                 }
                             }
     
