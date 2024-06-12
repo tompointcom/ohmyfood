@@ -1,7 +1,7 @@
-.main__description__btn:hover {
+.btn-hover:hover {
   background: linear-gradient(to bottom, #a16be0 -11.44%, #ff93e1 123.93%);
 }
-.main__description__btn:hover p {
+.btn-hover:hover p {
   transform: scale(1.02);
 }
 
@@ -432,9 +432,9 @@ a {
 @media (min-width: 1254px) {
   .main-menu__card__content__header {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding-left: -100px;
+    gap: 30px;
   }
 }
 .main-menu__card__content__title {
@@ -443,6 +443,11 @@ a {
   font-weight: 400;
   padding-left: 20px;
 }
+.main-menu__card__content__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main-menu__card__content__heart .fa-heart {
   align-self: center;
   z-index: 2;
@@ -450,7 +455,6 @@ a {
   position: absolute;
   transition: all 300ms ease-in-out;
   font-size: 25px;
-  left: 90%;
 }
 .main-menu__card__content__heart .fa-solid {
   position: absolute;
@@ -530,7 +534,7 @@ a {
   gap: 15px;
 }
 .main-menu__card__content__entrees__meal .prix {
-  align-self: center;
+  align-self: flex-end;
   justify-self: flex-end;
 }
 .main-menu__card__content__entrees__meal__check {
