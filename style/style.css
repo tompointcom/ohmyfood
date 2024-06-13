@@ -1,3 +1,19 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes visibility {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .btn-hover:hover {
   background: linear-gradient(to bottom, #a16be0 -11.44%, #ff93e1 123.93%);
 }
@@ -362,6 +378,40 @@ ul {
   content: "\f4c4";
   font-family: "FontAwesome";
   margin-right: 0.5em;
+}
+
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  animation: visibility 2s ease forwards;
+}
+
+.loader-active {
+  display: flex;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #008766;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
 a {
