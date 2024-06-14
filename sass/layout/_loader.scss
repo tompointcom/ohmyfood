@@ -7,12 +7,17 @@
     height: 100vh;
     @include flex-center;
     background: $tertiary-color;
-    animation: visibility 2s ease forwards;
+    animation: hideLoader 1.5s ease forwards;
   }
 
   .loader-active {
     display: flex;
   }
+
+  .loader-hidden {
+    display: none;
+  }
+  
 
 .loader::after {
     content: "";

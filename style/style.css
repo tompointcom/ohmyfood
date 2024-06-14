@@ -6,12 +6,13 @@
     transform: rotate(360deg);
   }
 }
-@keyframes visibility {
+@keyframes hideLoader {
   90% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 .btn-hover:hover {
@@ -391,11 +392,15 @@ ul {
   justify-content: center;
   align-items: center;
   background: #99E2D0;
-  animation: visibility 2s ease forwards;
+  animation: hideLoader 1.5s ease forwards;
 }
 
 .loader-active {
   display: flex;
+}
+
+.loader-hidden {
+  display: none;
 }
 
 .loader::after {

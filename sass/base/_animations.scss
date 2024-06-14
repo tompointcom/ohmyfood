@@ -1,16 +1,21 @@
 // Loader 
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-@keyframes visibility {
+@keyframes hideLoader {
   90%{
       opacity: 1;
   }
   100%{
       opacity: 0;
+      visibility: hidden;
   }
 }
 
