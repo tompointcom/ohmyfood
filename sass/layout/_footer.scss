@@ -1,4 +1,4 @@
-.footer {
+footer {
     background: #353535;
     color: white;
     padding: 2ch;
@@ -13,15 +13,15 @@
         
     }
 
-    &__title {
+    .footer__title {
         font-family: $title-font;
         font-weight: 400;
         font-style: italic;
-        font-style: 18px;
+        font-size: 18px;
         
     }
 
-    &__content {
+    .footer__content {
         
         &__unordered-list {   
 

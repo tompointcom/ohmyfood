@@ -301,7 +301,7 @@ ul {
   flex-direction: column;
   width: 100%;
 }
-.main__restaurants__container__link__card__content__text h3 {
+.main__restaurants__container__link__card__content__text__title {
   line-height: 21.09px;
   cursor: pointer;
   display: flex;
@@ -310,7 +310,7 @@ ul {
   justify-content: space-between;
   position: relative;
 }
-.main__restaurants__container__link__card__content__text h3 .fa-heart {
+.main__restaurants__container__link__card__content__text__title .fa-heart {
   align-self: center;
   z-index: 2;
   opacity: 1;
@@ -319,7 +319,7 @@ ul {
   font-size: 25px;
   left: 95%;
 }
-.main__restaurants__container__link__card__content__text h3 .fa-solid {
+.main__restaurants__container__link__card__content__text__title .fa-solid {
   position: absolute;
   opacity: 0;
   background-clip: text;
@@ -327,10 +327,10 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.main__restaurants__container__link__card__content__text h3 .fa-regular:hover {
+.main__restaurants__container__link__card__content__text__title .fa-regular:hover {
   opacity: 0;
 }
-.main__restaurants__container__link__card__content__text h3 .fa-solid:hover {
+.main__restaurants__container__link__card__content__text__title .fa-solid:hover {
   opacity: 1;
 }
 .main__restaurants__container__link__card__content__text p {
@@ -338,13 +338,13 @@ ul {
   cursor: pointer;
 }
 
-.footer {
+footer {
   background: #353535;
   color: white;
   padding: 2ch;
 }
 @media (min-width: 1254px) {
-  .footer {
+  footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -353,29 +353,29 @@ ul {
     padding-right: 50px;
   }
 }
-.footer__title {
+footer .footer__title {
   font-family: "Shrikhand";
   font-weight: 400;
   font-style: italic;
-  font-style: 18px;
+  font-size: 18px;
 }
 @media (min-width: 1254px) {
-  .footer__content__unordered-list {
+  footer .footer__content__unordered-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 30px;
   }
 }
-.footer__content__unordered-list a:visited {
+footer .footer__content__unordered-list a:visited {
   color: white;
 }
-.footer__content__unordered-list .list-icon1::before {
+footer .footer__content__unordered-list .list-icon1::before {
   content: "\f2e7";
   font-family: "FontAwesome";
   margin-right: 1em;
 }
-.footer__content__unordered-list .list-icon2::before {
+footer .footer__content__unordered-list .list-icon2::before {
   content: "\f4c4";
   font-family: "FontAwesome";
   margin-right: 0.5em;
